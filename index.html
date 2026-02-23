@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoral Universitária da Unicamp</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0056b3; 
+            --light-blue: #eef2f6;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --accent: #d90429;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Cabeçalho de Navegação */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.2s;
+        }
+
+        header nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: var(--light-blue);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .subtitle a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .subtitle a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            border: 1px solid #e5e7eb;
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 15px;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .info-list strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .alert {
+            background-color: #fef2f2;
+            border-left: 4px solid var(--accent);
+            color: #991b1b;
+            padding: 16px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            header nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#index.html">Início</a>
+            <a href="#atividades">Atividades</a>
+            <a href="#contato">Contato</a>
+            <a href="igrejas.html">Igrejas Próximas</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="page-header">
+            <div class="logo-placeholder">
+                <img src = "logo.png" alt = "Logo Pastoral">
+            </div>
+            
+            <h1>Pastoral Universitária</h1>
+            <p class="subtitle">
+                Comunidade católica na <a href="#">Unicamp</a> • Ligada à <a href="#">Arquidiocese de Campinas</a>
+            </p>
+        </div>
+
+        <section class="card">
+            <h2>📅 Horários das Missas</h2>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Promovidas semanalmente na Unicamp:</p>
+            <ul class="info-list">
+                <li><strong>Quartas-feiras às 18h10</strong> <br> Sala EM20 (Bloco FEA/FEM)</li>
+                <li><strong>Quintas-feiras às 12h15</strong> <br> Sala EM20 (Bloco FEA/FEM)</li>
+            </ul>
+
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #e5e7eb;">
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Promovidas pela capelania do HC:</p>
+                <ul class="info-list">
+                    <li><strong>Sextas-feiras às 13h15</strong> <br> Capela do Hospital de Clínicas (HC)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id = "atividades" class="card">
+            <h2>👥 Atividades</h2>
+            <ul class="info-list">
+                <li>
+                    <strong>Grupo de Estudos Bíblicos (GEB)</strong><br>
+                    Segundas às 18h15 • Ainda a definir
+                </li>
+                <li>
+                    <strong>GOU Beraká (Ministério Universidades Renovadas)</strong><br>
+                    Terças às 12h20 • Sala EM20<br>
+                    <span style="color: var(--primary-blue); font-size: 13px;">Instagram: @gouberakaunicamp</span>
+                </li>
+                <li>
+                    <strong>Sanctum Rosarium</strong><br>
+                    Quartas às 12h10 • Praça do Ciclo Básico (CB)
+                </li>
+                <li>
+                    <strong>Santo Terço Mariano</strong><br>
+                    Sextas às 12h10 • Praça do Ciclo Básico (CB)
+                </li>
+    
+            </ul>
+        </section>
+
+        <section id = "contato" class="card">
+            <h2>✉️ Contato</h2>
+            <ul class="info-list">
+                <li>
+                    <strong>Instagram:</strong><br>
+                    <a href="https://www.instagram.com/pastoralunicamp/?hl=pt-br" style="color: var(--primary-blue); text-decoration: none;">https://www.instagram.com/pastoralunicamp</a>
+                </li>
+                <li>
+                    <strong>Dúvidas gerais e coordenação:</strong><br>
+                    <a href="mailto:pastoral.unicamp@gmail.com" style="color: var(--primary-blue); text-decoration: none;">pastoral.unicamp@gmail.com</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Pastoral Universitária da Unicamp. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
